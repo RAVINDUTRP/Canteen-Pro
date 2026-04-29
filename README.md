@@ -1,4 +1,4 @@
-# Canteen Pro
+# Canteen Pro 🍽️👨‍🍳
 
 An advanced canteen management system developed for the SLIIT 3rd Year 2nd Semester ITPM module. Canteen Pro streamlines canteen operations, offering a seamless experience for administrators, staff, and students.
 
