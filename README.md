@@ -1,41 +1,88 @@
 # Canteen Pro
 
-## Project Setup & Running Locally
+An advanced canteen management system developed for the SLIIT 3rd Year 2nd Semester ITPM module. Canteen Pro streamlines canteen operations, offering a seamless experience for administrators, staff, and students.
 
-### 1. Install Dependencies
-
-#### Root (required for combined dev script)
-```
 npm install
-```
-
-#### Server
-```
-cd server
-npm install
-```
-
-#### Client (Vite)
-```
-cd client
-npm install
-```
-
-### 2. Environment Variables
-- Copy `server/.env.example` to `server/.env` and fill in required values (e.g., database URI, JWT secret).
-
-### 3. Run the App
-
-#### Both client + server (recommended)
-```
 npm run dev
-```
-- Launches `server` (`npm run dev`) and `client` (`npm run dev` via Vite) concurrently.
-- Open [http://localhost:3000](http://localhost:3000) for the frontend; `/api/*` requests proxy to [http://localhost:5000](http://localhost:5000).
 
-#### Individually
-- Backend: `cd server && npm run dev`
-- Frontend: `cd client && npm run dev`
+## 🚀 Features
+
+- User authentication & role-based access
+- Canteen directory and details management
+- Menu creation and updates
+- Order placement and tracking
+- Cart and checkout system
+- Staff and admin dashboards
+- Announcements and notifications
+- Responsive, modern UI (React + Tailwind CSS)
+- RESTful API backend (Node.js, Express, MongoDB)
+- End-to-end testing with Playwright
+
+## 📦 Project Structure
+
+```
+canteen-pro/
+	client/   # Frontend (React, Vite, Tailwind)
+	server/   # Backend (Node.js, Express, MongoDB)
+```
+
+## 🛠️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/RAVINDUTRP/Canteen-Pro.git
+cd Canteen-Pro
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+cd server && npm install
+cd ../client && npm install
+```
+
+### 3. Configure Environment
+
+- Copy `server/.env.example` to `server/.env` and update with your settings (MongoDB URI, JWT secret, etc).
+
+### 4. Run the Application
+
+- **Full stack (recommended):**
+	```bash
+	npm run dev
+	```
+	- Frontend: [http://localhost:3000](http://localhost:3000)
+	- Backend API: [http://localhost:5000](http://localhost:5000)
+
+- **Individually:**
+	- Backend: `cd server && npm run dev`
+	- Frontend: `cd client && npm run dev`
+
+## 🧪 Testing
+
+- Install Playwright browsers:
+	```bash
+	npm run test:e2e:install
+	```
+- Run all E2E tests:
+	```bash
+	npm run test:e2e
+	```
+
+## 🤝 Contributing
+
+1. Fork this repository
+2. Create a new feature branch
+3. Commit your changes
+4. Open a pull request
+
+Please follow the existing code style and folder structure.
+
+## 📄 License
+
+This project is licensed under the MIT License.
 
 ---
 
